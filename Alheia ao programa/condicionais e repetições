@@ -1,0 +1,120 @@
+//COndicionais em C# (If/Else e Switch/case) 
+
+//== IF / ELSE
+bool condition = true;
+
+if (condition)
+{
+    Console.WriteLine("The variable is set to true.");
+}
+else
+{
+    Console.WriteLine("The variable is set to false.");
+}
+
+// == SWITCH / CASE
+int variavel = 1;
+
+switch (variavel)
+{
+    case 1:
+        Console.WriteLine("Case 1");
+        break;
+    case 2:
+        Console.WriteLine("Case 2");
+        break;
+    default:
+        Console.WriteLine("Default case");
+        break;
+}
+
+
+//Estruturas de repetição em C# (for, while, do while e for each)
+
+// == For 
+/* 
+for (inicializador; condição; iterador)
+    body
+*/
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(i);
+}
+//Resultado da execução no console:
+
+0
+1
+2
+3
+4
+
+// == While
+int n = 0;  //variável inicial declarada antes
+while (n < 5) //condição
+{
+    Console.WriteLine(n);  //instrução entre chaves
+    n++;                   // pós execução
+}
+//Saída
+0
+1
+2
+3
+4
+
+//exemplo de ''continue'' (segue a linha do código abaixo sem voltar ao início do loop)
+int n = 0;
+while (n < 5)
+{
+    if(n==2)
+    {
+        n++;
+        continue;
+    }
+    Console.WriteLine(n);
+    n++;
+}
+//Saída
+
+0
+1
+3
+4
+
+
+//do while muda que o while vai para o final, ou seja a condição é executada após 
+int n = 0;
+do
+{
+    Console.WriteLine(n);
+    n++;
+} while (n < 5);
+//Saída
+0
+1
+2
+3
+4
+//Sim, é tipo o while.
+
+//For each é ''a cada elemento'' da lista, ele executa o código.
+var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 }; //declarado o array pelo qual o loop irá passar
+int count = 0; //declarada a posição inicial do loop
+foreach (int element in fibNumbers) //começa o loop (para cada elemento inteiro na variável)
+{
+    Console.WriteLine($"Elemento #{count}: {element}");  // dada a instrução
+    count++;                                             // pós execução
+}
+Console.WriteLine($"Número de elementos: {count}");       //Isso irá acontecer após a execução parar de ser loopada.
+//Saída
+Elemento #0: 0
+Elemento #1: 1
+Elemento #2: 1
+Elemento #3: 2
+Elemento #4: 3
+Elemento #5: 5
+Elemento #6: 8
+Elemento #7: 13
+Número de elementos: 8
+
