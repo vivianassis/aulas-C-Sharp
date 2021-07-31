@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace C_
 {
     class Program
@@ -10,15 +9,15 @@ namespace C_
             int var2 = 2;
             int var3 = 6;
             {
-            Console.WriteLine (var1);
-            Console.WriteLine (var2);
-            Console.WriteLine (var3);
-            Console.WriteLine (var1 > var2);
-            Console.WriteLine (var3 == var2);
-            var1++;
-            Console.WriteLine (var1);
-            --var3;
-            Console.WriteLine (var3);
+                Console.WriteLine(var1);
+                Console.WriteLine(var2);
+                Console.WriteLine(var3);
+                Console.WriteLine(var1 > var2);
+                Console.WriteLine(var3 == var2);
+                var1++;
+                Console.WriteLine(var1);
+                --var3;
+                Console.WriteLine(var3);
             }
         }
     }
